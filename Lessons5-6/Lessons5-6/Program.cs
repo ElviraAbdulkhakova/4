@@ -121,7 +121,7 @@ namespace Lessons5_6
             humans.Last().interest = interest;
             Operations.ChangeGender(ref humans.Last().gender);
 
-            Console.WriteLine("\nYou added new human: {0}", humans.Last());
+            Console.WriteLine("\nYou added new human: \"{0}\"", humans.Last());
         }
 
         //Remove human from list
