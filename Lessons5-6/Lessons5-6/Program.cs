@@ -38,32 +38,32 @@ namespace Lessons5_6
                 {
                     case "print":
                         {
-                            Operations.Print(ref humans);
+                            Operations.Print(humans);
                             break;
                         }
                     case "sort Family":
                         {
-                            Operations.SortFamily(ref humans);
+                            Operations.SortFamily(humans);
                             break;
                         }
                     case "sort Name":
                         {
-                            Operations.SortName(ref humans);
+                            Operations.SortName(humans);
                             break;
                         }
                     case "Set":
                         {
-                            Operations.Set(ref humans);
+                            Operations.Set(humans);
                             break;
                         }
                     case "Add":
                         {
-                            Operations.Add(ref humans);
+                            Operations.Add(humans);
                             break;
                         }
                     case "Remove":
                         {
-                            Operations.Remove(ref humans);
+                            Operations.Remove(humans);
                             break;
                         }
                     case "help":
@@ -107,7 +107,7 @@ namespace Lessons5_6
     class Operations
     {
         //Add a new human in list
-        public static void Add(ref List<Human> humans)
+        public static void Add(List<Human> humans)
         {
             humans.Add(new Human());
             Console.Write("\nEnter first name: ");
@@ -119,13 +119,13 @@ namespace Lessons5_6
             Console.Write("Enter interest: ");
             string interest = Console.ReadLine();
             humans.Last().interest = interest;
-            Operations.ChangeGender(ref humans.Last().gender);
+            Operations.ChangeGender(humans.Last());
 
             Console.WriteLine("\nYou added new human: \"{0}\"", humans.Last());
         }
 
         //Remove human from list
-        public static void Remove(ref List<Human> humans)
+        public static void Remove(List<Human> humans)
         {
             
             Console.WriteLine("\nChoose a number of element to remove:");
@@ -175,7 +175,7 @@ namespace Lessons5_6
         }
 
         //Change the value of any parametr
-        public static void Set(ref List<Human> humans)
+        public static void Set(List<Human> humans)
         {
             Console.WriteLine("\nChoose a number of element to set any option:");
             for (int i = 0; i < humans.Count; i++)
@@ -224,7 +224,7 @@ namespace Lessons5_6
                                       }
                                  case 4:
                                       {
-                                          Operations.ChangeGender(ref humans[number].gender);
+                                          Operations.ChangeGender(humans[number]);
                                           Console.WriteLine("\nAfter changes {0} element of array is \"{1}\"", number, humans[number]);
                                           break;
                                       }
@@ -267,7 +267,7 @@ namespace Lessons5_6
         }
 
         //print the list of humans
-        public static void Print(ref List<Human> humans)
+        public static void Print(List<Human> humans)
         {
             for (int i = 0; i < humans.Count; i++)
             {
@@ -276,7 +276,7 @@ namespace Lessons5_6
         }
 
         //Sort by first names
-        public static void SortName(ref List<Human> humans)
+        public static void SortName(List<Human> humans)
         {
             List<string> firstname = new List<string>();
             for (int i=0; i<humans.Count;i++)
@@ -313,7 +313,7 @@ namespace Lessons5_6
         }
 
         //Sort by last names
-        public static void SortFamily(ref List<Human> humans)
+        public static void SortFamily(List<Human> humans)
         {
             List<string> lastname = new List<string>();
             for (int i = 0; i < humans.Count; i++)
@@ -350,7 +350,7 @@ namespace Lessons5_6
         }
 
         //Set the value of gender
-        private static void ChangeGender(ref Human._gender gender)
+        private static void ChangeGender(Human human)
         {
             Console.WriteLine("Enter \"1\" to set male gender, \"2\" - to set female gender");
             int x;
@@ -362,18 +362,18 @@ namespace Lessons5_6
                 {
                     case 1:
                         {
-                            gender = Human._gender.male;
+                            human.gender = Human._gender.male;
                             break;
                         }
                     case 2:
                         {
-                            gender = Human._gender.female;
+                            human.gender = Human._gender.female;
                             break;
                         }
                     default:
                         {
                             Console.Write("You entered incorrect number and gender set in \"male\". You may use operation \"Set\" to change any parametr");
-                            gender = Human._gender.male;
+                            human.gender = Human._gender.male;
                             break;
                         }
                 }

@@ -10,3 +10,9 @@ C:\Users\Abdulkhakova\Documents\Elya\4\Lessons5-6\Lessons5-6\obj\Debug\Lessons5-
 C:\Users\Abdulkhakova\Documents\Elya\4\Lessons5-6\Lessons5-6\bin\Debug\Lessons5-6.exe
 C:\Users\Abdulkhakova\Documents\Elya\4\Lessons5-6\Lessons5-6\bin\Debug\Lessons5-6.pdb
 C:\Users\Abdulkhakova\Documents\Elya\4\Lessons5-6\Lessons5-6\obj\Debug\Lessons5-6.csprojResolveAssemblyReference.cache
+C:\Users\Elya\Documents\C#\4\Lessons5-6\Lessons5-6\bin\Debug\Lessons5-6.exe.config
+C:\Users\Elya\Documents\C#\4\Lessons5-6\Lessons5-6\obj\Debug\Lessons5-6.exe
+C:\Users\Elya\Documents\C#\4\Lessons5-6\Lessons5-6\obj\Debug\Lessons5-6.pdb
+C:\Users\Elya\Documents\C#\4\Lessons5-6\Lessons5-6\bin\Debug\Lessons5-6.exe
+C:\Users\Elya\Documents\C#\4\Lessons5-6\Lessons5-6\bin\Debug\Lessons5-6.pdb
+C:\Users\Elya\Documents\C#\4\Lessons5-6\Lessons5-6\obj\Debug\Lessons5-6.csprojResolveAssemblyReference.cache
